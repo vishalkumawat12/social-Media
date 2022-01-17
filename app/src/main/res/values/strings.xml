@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">social media</string>
+
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="add">add post</string>
+    <string name="user">user</string>
+    <string name="notification">notification</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello profile fragment</string>
+</resources>

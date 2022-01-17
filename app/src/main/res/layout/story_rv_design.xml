@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/story"
+        android:layout_width="@dimen/_130mdp"
+        android:layout_height="@dimen/_85mdp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/u"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:src="@drawable/u"
+
+        app:layout_constraintStart_toStartOf="@+id/story"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.devlomi.circularstatusview.CircularStatusView
+        android:id="@+id/sotyAC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/story_profile_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image"
+        app:portion_color="@color/orange"
+        app:portion_spacing="6dp"
+        app:portion_width="2dp"
+        app:portions_count="4"/>
+
+    <ImageView
+        android:id="@+id/storyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/story"
+        app:layout_constraintTop_toTopOf="@+id/profile_image"
+        app:srcCompat="@drawable/ic_baseline_videocam_24" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="vishal kumawat"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/story"
+        app:layout_constraintEnd_toEndOf="@+id/story"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/story" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
